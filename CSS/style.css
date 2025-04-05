@@ -1,0 +1,86 @@
+/* Estilos generales del cuerpo de la página */
+body {
+    background-color: #FDF6EC; /* Fondo claro cálido (crema más neutro) */
+    color: #1C1F33; /* Texto principal: azul oscuro fuerte, da seriedad */
+    font-family: sans-serif; /* Fuente sin serifas para una lectura clara */
+    margin: 0; /* Elimina los márgenes por defecto */
+}
+
+/* Estilos del encabezado */
+header {
+    display: flex; /* Usa flexbox para alinear contenido */
+    background-color: #005F73; /* Azul petróleo masculino y elegante */
+    padding: 15px; /* Espaciado interno para que respire */
+    justify-content: space-between; /* Espacia los elementos al máximo */
+    align-items: center; /* Centra verticalmente los elementos */
+}
+
+/* El nav no necesita display: inline aquí porque se controla con los <li> */
+nav {
+    display: inline; /* Puede omitirse si no afecta nada */
+}
+
+/* Estilo para los elementos de la lista */
+nav li {
+    display: inline; /* Los pone uno al lado del otro */
+    list-style-type: none; /* Quita los puntos de lista */
+}
+
+/* Estilos para los enlaces de navegación */
+nav li a {
+    padding: 10px 15px; /* Espacio interno más cómodo */
+    margin: 5px; /* Espacio entre cada enlace */
+    background-color: #0A9396; /* Verde azulado fuerte, moderno */
+    color: #FFFFFF; /* Texto blanco para mejor contraste */
+    text-decoration: none; /* Quita el subrayado */
+    border-radius: 8px; /* Bordes redondeados */
+    transition: all 0.3s ease; /* Transición suave al hacer hover */
+    font-weight: bold; /* Hace que se vea más firme */
+}
+
+/* Estilo cuando el cursor pasa sobre un enlace */
+nav li a:hover {
+    background-color: #94D2BD; /* Verde menta más vivo para resaltar */
+    color: #001219; /* Azul muy oscuro para contraste con hover */
+    border: 2px solid #EE9B00; /* Naranja quemado, vibrante y masculino */
+}
+
+/*Inicia la seccion de inicio*/
+
+#inicio {
+    background-color: #BB3E03; /* Rojo quemado */
+    color: #FFFFFF; /* Texto blanco */
+    margin: 50px;
+    padding: 50px;
+    border-radius: 10px;
+}
+
+/* Contenedor general con flex para alinear texto e imagen lado a lado */
+#inicio .contenido {
+    display: flex;
+    justify-content: space-between; /* Deja texto a la izquierda, imagen a la derecha */
+    align-items: center; /* Alineación vertical en el mismo nivel */
+    gap: 30px; /* Espacio entre texto e imagen */
+    flex-wrap: wrap; /* Por si el espacio es pequeño, se acomoda bonito */
+}
+
+/* Texto ocupa más espacio */
+#inicio .texto {
+    flex: 1; /* Que el texto crezca según espacio disponible */
+}
+
+/* Imagen fija a la derecha */
+#inicio article img {
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Estilo del pie de página */
+footer {
+    background-color: #CA6702; /* Naranja quemado fuerte */
+    padding: 10px; /* Espacio interno */
+    text-align: center; /* Centra el texto */
+    color: #FFFFFF; /* Texto blanco para resaltar */
+    font-weight: bold; /* Que no se vea apagado */
+}
